@@ -1,0 +1,13 @@
+# Проект рассчитан на Windows: .bat и .ps1 должны оставаться с CRLF,
+# иначе cmd.exe и PowerShell могут ругаться на переводы строк.
+* text=auto
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.txt text eol=crlf
+*.py  text eol=lf
+*.json text eol=lf
+*.md  text eol=lf
+*.ico binary
+*.exe binary
+*.zip binary

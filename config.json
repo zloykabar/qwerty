@@ -1,0 +1,14 @@
+{
+  "ollama_model": "qwen2.5:3b",
+  "writer_model": "",
+  "city": "",
+  "address_as": "",
+  "web_search": "auto",
+  "autostart": true,
+  "auto_start_ollama": true,
+  "stop_ollama_on_exit": true,
+  "apps": {},
+  "sites": {},
+  "browser": "auto",
+  "fuzzy_threshold": 80
+}

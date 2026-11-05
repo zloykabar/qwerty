@@ -1,0 +1,12 @@
+# Конфигурация инструментов разработки. Проект не ставится как пакет:
+# он распространяется архивом и настраивается install.ps1.
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E501"]
+
+[tool.unittest]
+start-dir = "tests"

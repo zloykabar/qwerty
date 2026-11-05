@@ -1,0 +1,34 @@
+# Пользовательские данные и рабочие файлы — не в репозиторий
+logs/
+profile.json
+settings.json
+config/custom_commands.json
+custom_commands.json
+browser_profile/
+xtts_env/
+piper/
+voices/
+model/
+runtime/
+
+# Логи и отчёты
+*.log
+crash.log
+diagnose.txt
+install.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Сборка
+build/
+dist/
+*.spec
+
+# Прочее
+.DS_Store
+Thumbs.db
