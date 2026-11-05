@@ -1,0 +1,52 @@
+{
+ "scenarios": [
+  {
+   "id": "youtube_video",
+   "phrases": [
+    "ютуб видео",
+    "видео на ютубе",
+    "покажи видео на ютубе"
+   ],
+   "params": [
+    {
+     "name": "query",
+     "prompt": "Какое видео включить?"
+    },
+    {
+     "name": "time",
+     "prompt": "На какое время перемотать?"
+    }
+   ],
+   "reply": "",
+   "steps": [
+    {
+     "action": "browser.open_site",
+     "params": {
+      "site": "ютуб"
+     },
+     "on_error": "abort",
+     "undo": {
+      "action": "browser.close_tab",
+      "params": {}
+     }
+    },
+    {
+     "action": "browser.youtube_play",
+     "params": {
+      "query": "{query}"
+     },
+     "on_error": "retry:1",
+     "timeout": 90
+    },
+    {
+     "action": "browser.seek",
+     "params": {
+      "time": "{time}"
+     },
+     "optional": true,
+     "on_error": "skip"
+    }
+   ]
+  }
+ ]
+}

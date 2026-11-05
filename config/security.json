@@ -1,0 +1,10 @@
+{
+  "_comment": "Правила безопасности. allowed_roots: где файловые операции разрешены без вопросов. Остальное: только после голосового «да». forbidden: сюда нельзя вообще.",
+  "allowed_roots": ["workdir", "desktop", "documents", "downloads", "pictures"],
+  "forbidden": ["%WINDIR%", "%ProgramFiles%", "%ProgramFiles(x86)%", "%ProgramData%", "%USERPROFILE%\\AppData",
+                "{BASE}\\runtime", "{BASE}\\core", "{BASE}\\config", "{BASE}\\xtts_env", "C:\\$Recycle.Bin",
+                "C:\\System Volume Information"],
+  "exec_extensions": [".exe", ".msi", ".bat", ".cmd", ".ps1", ".vbs", ".js", ".scr", ".com", ".jar", ".reg"],
+  "yes_words": ["да", "давай", "ага", "конечно", "угу", "подтверждаю", "делай", "валяй", "верно", "выполняй", "согласен"],
+  "confirm_timeout": 20
+}
